@@ -106,7 +106,7 @@ public class TicTacToeModel {
 					return true;
 			}
         }
-        
+         return false; 
     }
 	
     public boolean isValidSquare(int row, int col) {
