@@ -86,7 +86,7 @@ public class TicTacToeModel {
 	}
 	
         
-    }
+    
 	
     public boolean makeMark(int row, int col) {
         
@@ -94,7 +94,7 @@ public class TicTacToeModel {
            location, but only if the location is valid and if the square is
            empty! */
         
-          f(isValidSquare(row, col) && (!isSquareMarked(row, col))){
+          if(isValidSquare(row, col) && (!isSquareMarked(row, col))){
 			if(xTurn){
 					grid[row][col] = Mark.X;
 					xTurn = false;
@@ -106,7 +106,7 @@ public class TicTacToeModel {
 					return true;
 			}
         }
-        return false; /* remove this line! */
+        
     }
 	
     private boolean isValidSquare(int row, int col) {
