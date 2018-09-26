@@ -27,7 +27,7 @@ public class TicTacToeController {
         
         /* Prompt player for next move using view's showNextMovePrompt() */
         
-        view.showNextMovePrompt();
+        //view.showNextMovePrompt();
         	int row = keyboard.nextInt();
 		    int col = keyboard.nextInt();
         
@@ -42,7 +42,7 @@ public class TicTacToeController {
             model.makeMark(row, col);
         }
         else{
-            view.showInputError();
+            System.out.println("Input is invalid!");
         }
         
     }
